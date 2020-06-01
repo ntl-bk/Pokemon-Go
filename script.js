@@ -79,7 +79,7 @@ function typeTemplate(type, color) {
 }
 
 function getPokemonByName(pokemonName) {
-  fetch(`http://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+  fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
     .then((res) => res.json())
     .then((data) => {
       addPokemonToDOM(data);
