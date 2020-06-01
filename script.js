@@ -25,7 +25,7 @@ const types = {
   shadow: 'lightgrey',
 };
 
-async function getPokemons(url = 'http://pokeapi.co/api/v2/pokemon/?limit=12') {
+async function getPokemons(url = 'https://pokeapi.co/api/v2/pokemon/?limit=12') {
   const response = await fetch(url);
   const data = await response.json();
   const detailsResponsePromise = Promise.all(
