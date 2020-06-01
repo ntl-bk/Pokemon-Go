@@ -65,7 +65,7 @@ function pokemonTemplate(pokemon, pokemonInfo) {
     });
   return `
     <div class="pokemon-card" data-pokemonName="${pokemon.name}">
-      <img class="card-img" src="../img/cross.svg">
+      <img class="card-img" src="./img/cross.svg">
       <h2 class="pokemon-name">${toUpperFirstLetter(pokemon.name)}</h2>
       <div class="pokemon-types">${pokemonTypes
         .map((e) => typeTemplate(e.type, e.color))
@@ -89,7 +89,7 @@ function getPokemonByName(pokemonName) {
 function addPokemonToDOM(pokemon) {
   single_pokemonEl.innerHTML = `
   <div class="pokemon">
-  <img class="card-img pokemon-img" src="../img/cross.svg">
+  <img class="card-img pokemon-img" src="./img/cross.svg">
   <h2 class="pokemon-name">${toUpperFirstLetter(pokemon.name)} #${
     pokemon.order
   }</h2>
