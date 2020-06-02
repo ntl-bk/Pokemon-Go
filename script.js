@@ -151,7 +151,8 @@ pokemonsEl.addEventListener(
   'click',
   (e) => {
     e.preventDefault();
-    const pokemonCard = e.path.find((item) => {
+    var path = e.path || (e.composedPath && e.composedPath());
+    const pokemonCard = path.find((item) => {
       if (item.classList) {
         return item.classList.contains('pokemon-card');
       } else {
